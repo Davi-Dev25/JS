@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificar sua Nacionalidade</h1>
+    <form action="" method="post">
+        <p>
+        Verifique sua <label for="txtnac">Nacionalidade</label> aqui 
+        <input type="text" name="txtnac" id="txtnac" required></p>
+        <input type="button" value="Verificar" onclick="nacionalidade()">
+    </form>
+    <div id="res">
+
+    </div>
+    <script>
+        function nacionalidade(){
+            let naci = document.getElementById('txtnac')
+            let res = document.getElementById('res')
+            let pais = naci.value
+            res.innerHTML = (`<p>Olá, você é do <trong>${pais}</strong>, Boas-vindas</p>`)
+            if (pais == 'Brasil'){
+                res.innerHTML += (`<p>Você é <strong>Brasileiro</strong></p>`)
+            }else{
+                res.innerHTML += (`<p> Você é <strong>estrangeiro</strong></p>`)
+            }
+        }
+    </script>
+</body>
+</html>

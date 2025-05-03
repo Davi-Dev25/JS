@@ -1,2 +1,2 @@
 # JS
- Curso de JavaScript da ProUni
+ Curso de JavaScript do Curso em Video
