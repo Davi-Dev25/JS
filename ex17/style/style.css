@@ -1,9 +1,11 @@
 *{
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: rgb(103, 103, 255);
+    background-color: rgb(58, 58, 255);
 }
 header{
     color: white;
@@ -19,13 +21,9 @@ main{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.436);
 }
-
-img{
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    border-radius: 50%;
+section{
+    align-content: center;
+    
 }
 footer{
     color: white;
